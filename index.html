@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rentaro Tsunamura</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p2">Hello, I'm</p>
+        <h1 class="title">Rentaro Tsunamura</h1>
+        <p class="section__text__p2">Developer</p>
+        <div class="profile-btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-text-container">
+        <div class="about-containers">
+          <main class="row">
+		
+            <!--   *******  Education Section Starts  *******   -->
+            <div class="col">
+              <h2 class="sub-title">Education</h2>
+              <div class="contents">
+                
+                <div class="box">
+                  <a href="https://www.pen-kanagawa.ed.jp/yokosukaotsu-h/" style="text-decoration: none; color: inherit;">
+                    <h4>2017 - 2020</h4>
+                  <img src="./assets/Otsu.png" alt="High School" style="width:40px; height:auto;">
+                  <h3>High School Degree</h3>
+                  <p>I was a chemistry elective at Yokosuka Otsu High School. Also, I was on the basketball team for three years and vice captain. </p>
+                  </a>
+                </div>
+        
+                <div class="box">
+                  <a href="https://https://txwes.edu/academics/artssciences/undergraduate-majors/computer-science/" style="text-decoration: none; color: inherit;">
+                    <h4>2021 - Current</h4>
+                    <img src="./assets/TxWesShieldIcon.png" alt="University" style="width:40px; height:auto;">
+                    <h3>Bachelor's Degree in Computer Science</h3>
+                    <p>I am studying C++ and Java programming languages as well as Algorithms, Computer Networks, Software Engineering, and more at Texas Wesleyan University.</p>
+                  </a>
+                </div>
+        
+                <div class="box">
+                  <a href="https://txwes.edu/academics/artssciences/undergraduate-majors/mathematics/" style="text-decoration: none; color: inherit;">
+                    <h4>2023 - Current</h4>
+                    <img src="./assets/TxWesShieldIcon.png" alt="University" style="width:40px; height:auto;">
+                    <h3>Minor Degree in Math</h3>
+                    <p>I am studying calculus, probability, linear algebra, discrete mathematics, numerical analysis, and more at Texas Wesleyan University.</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+        
+            <!--   *******  Education Section Ends  *******   -->
+        
+            <!--   *******  Achivement Section Starts  *******  -->
+        
+            <div class="col">
+              <h2 class="sub-title">Achivement</h2>
+              <div class="contents">
+                
+                <div class="box">
+                  <a href="https://www.financialexploitationpreventioncenter.org/" style="text-decoration: none; color: inherit;"><h4>2023</h4>
+                    <img src="./assets/OIP.jpg" alt="High School" style="width:40px; height:auto;">
+                    <h3>Community Partnership Program</h3>
+                    <p>Award for volunteer activities that help people in need. We worked on activities such as painting houses, collecting garbage and more.</p>
+                  </a>
+                </div>
+        
+                <div class="box">
+                  <a href="https://txwes.edu" style="text-decoration: none; color: inherit;">
+                    <h4>2021 SP - 2022 FA, 2023 FA</h4>
+                    <img src="./assets/TxWesShieldIcon.png" alt="High School" style="width:40px; height:auto;">
+                    <h3>Dean's Honor List in Texas Wesleyan University</h3>
+                    <p>Students in good academic standing who complete a minimum of six hours of college-level credit per semester will be placed on the Dean's List.</p>
+                  </a>
+                </div>
+        
+                <div class="box">
+                  <a href="https://alphachihonor.org/" style="text-decoration: none; color: inherit;">
+                    <h4>2024 - Permanent</h4>
+                    <img src="./assets/AlphaChi.png" alt="Alpha Chi" style="width:40px; height:auto;">
+                    <h3>Member of Alpha Chi</h3>
+                    <p>It is an honor society in which only the top 1% of all students in the department are selected based on their grades and contributions in extramural activities.</p>
+                  </a>
+                </div>
+        
+              </div>
+            </div>
+        
+            <!--   *******   Achivement Section Ends   *******  -->
+          </main>
+        <div class="text-container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+            reprehenderit et laborum, rem, dolore eum quod voluptate
+            exercitationem nobis, nihil esse debitis maxime facere minus sint
+            delectus velit in eos quo officiis explicabo deleniti dignissimos.
+            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+            reiciendis ea magnam? Nulla, impedit fuga!
+          </p>
+        </div>
+      </div>  
+      
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-container">
+
+        <!--   *******  Front-End start *******   -->
+
+        <div class="experience-detail-container">
+          <h2 class="sub-title">Front-End</h2>
+          <div class="skill-box">
+            <span class="title">HTML</span>
+            <div class="skill-bar">
+                <span class="skill-per html">
+                    <span class="tooltip">60%</span>
+                </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">CSS</span>
+            <div class="skill-bar">
+                <span class="skill-per css">
+                    <span class="tooltip">40%</span>
+                </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">JavaScript</span>
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+                    <span class="tooltip">20%</span>
+                </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">NodeJS</span>
+            <div class="skill-bar">
+                <span class="skill-per nodejs">
+                    <span class="tooltip">20%</span>
+                </span>
+            </div>
+         </div>
+        </div>
+        <!--   *******  Front-End  Ends  *******   -->
+
+        <!--   *******  Back-End Start   *******   -->
+        <div class="experience-detail-container">
+          <h2 class="sub-title">Back-End</h2>
+          <div class="skill-box">
+            <span class="title">C++</span>
+            <div class="skill-bar">
+                <span class="skill-per cpp">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Java</span>
+            <div class="skill-bar">
+                <span class="skill-per java">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Python</span>
+            <div class="skill-bar">
+                <span class="skill-per python">
+                    <span class="tooltip">60%</span>
+                </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">ASM 32bit</span>
+            <div class="skill-bar">
+                <span class="skill-per asm32">
+                    <span class="tooltip">50%</span>
+                </span>
+            </div>
+         </div>
+         <!--   *******  Back-End  Ends  *******   -->
+
+        </div>  
+      </div>
+      <div class="experience-other-container">
+        <h2 class="sub-title">Other</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+            <div>
+              <h3>Matlab</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Live2D Cubism SDK for Unity</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Androd Studio</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Unity</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Fire Store</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>DX Library</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-containers">
+        
+          <!-- *************************************************  Project1 Starts *******************************************************************************************-->
+          <a class="projects-details-container" href="https://github.com/rtsunamura/Hex-Game-Process-Management" style="text-decoration: none; color: inherit;">
+              <img src="./assets/project-1.png" alt="Hex Game Management Process" class="project-img"/>
+            <div class="projects-text-container">
+              <h2 class="projects-sub-title project-title">Hex-Game Process Mng</h2>
+              <p>It was created in C++ language using an external Library called Dx Library. The purpose of creating this game was to implement the main process calling player1 process and player2 process, implement inter-process communication using shared memory, and implement successfully terminating child processes.</p>
+            </div>
+          </a>
+          <!-- *************************************************  Project1 Ends   *******************************************************************************************-->
+
+
+          
+          <!-- *************************************************  Project2  Starts ********************************************************************************************-->
+          <a class="projects-details-container" href="https://github.com/rtsunamura/Blur-Dating-App-Android-App" style="text-decoration: none; color: inherit;">
+            <img src="./assets/project-2.png" alt="Blur Dating App" class="project-img"/>
+            <div class="projects-text-container">
+              <h2 class="projects-sub-title project-title">Blur Dating App</h2>
+              <p>Collaborative development of a java-based, dating application using the Android Studio environment. Implemented Firebase/Firestore to provide authentication, secure user data management in the cloud, and real-time updates. It offers matching, messaging, premium member-only features, and more. </p>
+            </div>
+          </a>
+          <!-- *************************************************  Project2 Ends   *******************************************************************************************-->
+
+          
+          <!-- *************************************************  Project3 Starts ******************************************************************************************-->
+          <a class="projects-details-container" href="https://github.com/rtsunamura/AI-Assitance-for-Student" style="text-decoration: none; color: inherit;">
+            <img src="./assets/project-3.png" alt="AI Assistance for Student" class="project-img"/>
+            <div class="projects-text-container">
+              <h2 class="projects-sub-title project-title">AI Assistance for Students (TBD)</h2>
+              <p>An AI support project for students is currently under development. This project is developed in Unity and implements Live2D Cubism SDK for Unity, Open AI, Google Speech Cloud AI, and Voice Box to enable conversations with avatars. By having the AI learn information about the university in advance, it is expected that it will be able to help students in need.</p>
+            </div>
+          </a> 
+          <!-- *************************************************  Project3 Ends ******************************************************************************************-->
+      </div>
+      <button class="btn btn-color-2 project-btn btn-more" onclick="location.href='https://github.com/rtsunamura?tab=repositories'">More</button>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:r.tsunamura@gmail.com">r.tsunamura@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:r.tsunamura@gmail.com">+81 070 5074 1716</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:r.tsunamura@gmail.com">+1 682 374 8267</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon"class="icon contact-icon"/> <p><a href="https://www.linkedin.com/in/%E8%93%AE%E5%A4%AA%E9%83%8E-%E7%B6%B1%E6%9D%91-72054521a/?locale=en_US">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Renataro Tsunamura</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
